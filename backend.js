@@ -579,7 +579,7 @@ app.get('/invoice-detail/:inv',(req,res)=>{
 })
 
 app.get('/invoice-tgl/:inv',(req,res)=>{
-    db.query("select time from invoicesdetail where ?",
+    db.query("select time from invoicesdetail where ? limit 1",
     {
         inv_id: req.params.inv
     },
