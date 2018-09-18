@@ -7,7 +7,7 @@ import Registerpage from './Page/Registerpage'
 import Shoppingcart from './Page/Shoppingcart'
 
 import { Link, Route } from 'react-router-dom';
-import { createStore, applyMiddleware } from 'C:/Users/Dell/AppData/Local/Microsoft/TypeScript/2.9/node_modules/redux';
+import { createStore, applyMiddleware } from 'redux';
 import reducer from './reducer';
 import ReduxThunk from 'redux-thunk';
 import {Provider} from 'react-redux'
